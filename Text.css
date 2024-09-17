@@ -13,9 +13,10 @@ A.Text Color:
     The default text color for a page is defined in the body selector.
 
     Example */
-body {
-  color: blue;
-}
+
+#box1{
+
+
 
 h1 {
   color: green;
@@ -26,20 +27,12 @@ B. Text Color and Background Color:
     In this example, we define both the background-color property and the color property:
 
     Example */
-body {
-  background-color: lightgrey;
-  color: blue;
-}
 
 h1 {
   background-color: black;
   color: white;
 }
 
-div {
-  background-color: blue;
-  color: white;
-}
 
 /* 
 
@@ -145,4 +138,223 @@ img.d {
 
 img.e {
   vertical-align: super;
+}
+}
+
+/* 
+D. Text Decoration: 
+
+    CSS text-decoration Properties:                 
+    Property	                        Description
+    text-decoration	                    Sets all the text-decoration properties in one declaration
+    text-decoration-color	            Specifies the color of the text-decoration
+    text-decoration-line	            Specifies the kind of text decoration to be used (underline, overline, etc.)
+    text-decoration-style	            Specifies the style of the text decoration (solid, dotted, etc.)
+    text-decoration-thickness	        Specifies the thickness of the text decoration line
+
+
+    In this chapter you will learn about the following properties:
+        text-decoration-line
+        text-decoration-color
+        text-decoration-style
+        text-decoration-thickness
+        text-decoration
+
+
+    Add a Decoration Line to Text
+    The text-decoration-line property is used to add a decoration line to text.
+
+    Tip: You can combine more than one value, like overline and underline to display lines both over and under a text. */
+
+h2 {
+  text-decoration-line: underline;
+}
+
+p.ex1 {
+  text-decoration-line: overline underline;
+}
+
+/* 
+    Color for the Decoration Line: 
+        The text-decoration-color property is used to set the color of the decoration line.
+
+    Example */
+
+h3 {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+
+/* 
+    Style for the Decoration Line:
+        The text-decoration-style property is used to set the style of the decoration line.
+
+        Example */
+
+p.ex1 {
+  text-decoration-line: underline overline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+/* 
+    Thickness for the Decoration Line:
+        The text-decoration-thickness property is used to set the thickness of the decoration line.
+
+        Example
+*/
+p.ex2 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+}
+
+/* 
+    Shorthand Property:
+        The text-decoration property is a shorthand property for:
+
+        text-decoration-line (required)
+        text-decoration-color (optional)
+        text-decoration-style (optional)
+        text-decoration-thickness (optional)
+        Example: */
+
+h4 {
+  text-decoration: underline;
+}
+p.ex3{
+  text-decoration: underline red double 5px;
+}
+
+/* 
+E. Text Transformation
+The text-transform property is used to specify uppercase and lowercase letters in a text.
+
+It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:
+
+Example */
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+
+  /* 
+
+F.Text Spacing:
+    In this chapter you will learn about the following properties:
+      text-indent
+      letter-spacing
+      line-height
+      word-spacing
+      white-space
+
+        
+    The CSS Text Spacing Properties:  
+    Property	                Description
+    letter-spacing	          Specifies the space between characters in a text
+    line-height	              Specifies the line height
+    text-indent	              Specifies the indentation of the first line in a text-block
+    white-space	              Specifies how to handle white-space inside an element
+    word-spacing	            Specifies the space between words in a text
+      
+
+
+    1. Text Indentation:
+    The text-indent property is used to specify the indentation of the first line of a text:
+
+    Example */
+p {
+  text-indent: 50px;
+}
+
+/* 
+    2. Letter Spacing
+    The letter-spacing property is used to specify the space between the characters in a text.
+
+    The following example demonstrates how to increase or decrease the space between characters:
+
+    Example */
+h1 {
+  letter-spacing: 5px;
+}
+
+h2 {
+  letter-spacing: -2px;
+}
+
+/* 
+  3. Line Height
+    The line-height property is used to specify the space between lines:
+
+    Example */
+p.small {
+  line-height: 0.8;
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+    /* 
+  4. Word Spacing: 
+    The word-spacing property is used to specify the space between the words in a text.
+
+    The following example demonstrates how to increase or decrease the space between words:
+
+    Example */
+p.one {
+  word-spacing: 10px;
+}
+
+p.two {
+  word-spacing: -2px;
+}
+
+/* 
+  5.White Space
+    The white-space property specifies how white-space inside an element is handled.
+
+    This example demonstrates how to disable text wrapping inside an element:
+
+    Example */
+p {
+  white-space: nowrap;
+}
+
+  /* 
+G.Text Shadow:
+  The text-shadow property adds shadow to text.
+
+  In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):
+
+  Text shadow effect!
+  Example */
+h1 {
+  text-shadow: 2px 2px;
+}
+
+  /* 
+  Next, add a color (red) to the shadow:
+
+  Text shadow effect!
+  Example */
+h1 {
+  text-shadow: 2px 2px red;
+}
+
+/* 
+    Then, add a blur effect (5px) to the shadow:
+
+    Text shadow effect!
+    Example */
+h1 {
+  text-shadow: 2px 2px 5px red;
 }

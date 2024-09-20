@@ -1,0 +1,142 @@
+/* 
+A.Table Borders: 
+    To specify table borders in CSS, use the border property.
+
+    The example below specifies a solid border for <table>, <th>, and <td> elements: */
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+/* 
+    1.Full-Width Table: 
+        The table above might seem small in some cases. 
+        If you need a table that should span the entire screen (full-width), add width: 100% to the <table> element: */
+
+table {
+  width: 100%;
+}
+
+/*         
+    2.Collapse Table Borders:
+        The border-collapse property sets whether the table borders should be collapsed into a single border:
+ */
+table {
+  border-collapse: collapse;
+}
+
+/* If you only want a border around the table, only specify the border property for <table>: */
+
+table {
+  border: 1px solid;
+}
+
+/* 
+2.Table Width and Height
+The width and height of a table are defined by the width and height properties.
+
+The example below sets the width of the table to 100%, and the height of the <th> elements to 70px: */
+table {
+  width: 50%;
+}
+
+th {
+  height: 70px;
+}
+
+/* 
+
+3. Table Alignment: 
+    A. Horizontal Alignment
+        The text-align property sets the horizontal alignment (like left, right, or center) of the content in <th> or <td>.
+
+        By default, the content of <th> elements are center-aligned and the content of <td> elements are left-aligned.
+
+        To center-align the content of  <td> elements as well, use text-align: center:*/
+td {
+  text-align: center;
+}
+/* To left-align the content, force the alignment of <th> elements to be left-aligned, with the text-align: left property: */
+
+th {
+  text-align: left;
+}
+
+/* 
+    B.Vertical Alignment: 
+        The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
+
+        By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).
+
+        The following example sets the vertical text alignment to bottom for <td> elements:
+ */
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+/*
+4.Table Style:
+    A. Table Padding: 
+         To control the space between the border and the content in a table, use the padding property on <td> and <th> elements: */
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+/* 
+    B.Horizontal Dividers
+        Add the border-bottom property to <th> and <td> for horizontal dividers: */
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+/* 
+    C.Hoverable Table
+        Use the :hover selector on <tr> to highlight table rows on mouse over: */
+
+tr:hover {
+  background-color: coral;
+}
+
+/*     
+    D.zebra-striped tables: 
+        use the nth-child(even) selector and add a background-color to all even table rows: */
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+        /* use the nth-child(odd) selector and add a background-color to all odd table rows: */
+ tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* 
+    E.Table Color: 
+        The example below specifies the background color and text color of <th> elements: */
+
+th {
+  background-color: #04aa6d;
+  color: yellow;
+}
+
+/* 
+4. Responsive Table: 
+    A responsive table will display a horizontal scroll bar if the screen is too small to display the full content:
+
+    Add a container element (like <div>) with overflow-x:auto around the <table> element to make it responsive: */
+
+    /* 
+<div style="overflow-x:auto;">
+
+<table>
+... table content ...
+</table>
+
+</div>
+ */

@@ -59,22 +59,61 @@ The display Property
 
 
     
-    Display: none;
-    display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.
+    3. Display: none;
+        display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. 
+        Take a look at our last example on this page if you want to know how this can be achieved.
 
-    The <script> element uses display: none; as default.
+        The <script> element uses display: none; as default.
 
-    Click to show panel
+    
+    4. Override The Default Display Value: 
+        As mentioned, every element has a default display value. However, you can override this.
 
-    Override The Default Display Value
-    As mentioned, every element has a default display value. However, you can override this.
+        Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.
 
-    Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.
+        A common example is making inline <li> elements for horizontal menus:
 
-    A common example is making inline <li> elements for horizontal menus:
-
-    Example*/
+        Example*/
 
 li {
   display: inline;
 } 
+
+/* 
+    Note: Setting the display property of an element only changes how the element is displayed, NOT what kind of element it is.
+    So, an inline element with display: block; is not allowed to have other block elements inside it.
+
+    The following example displays <span> elements as block elements: */
+
+span {
+  display: block;
+}
+
+/* 
+        The following example displays <a> elements as block elements:
+
+        Example */
+a {
+  display: block;
+    }
+    
+   
+    /* 
+    5. Hide an Element - 
+        A.display:none
+            Hiding an element can be done by setting the display property to none. 
+            The element will be hidden, and the page will be displayed as if the element is not there:
+
+            Example */
+
+h1.hidden {
+  display: none;
+}
+
+/* 
+        B. visibility:hidden; also hides an element.
+
+            However, the element will still take up the same space as before. The element will be hidden, but still affect the layout: */
+h2.hidden {
+  visibility: hidden;
+}

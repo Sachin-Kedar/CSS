@@ -1,4 +1,3 @@
-
 /* 
 Float Property: 
     The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
@@ -30,7 +29,7 @@ Float Property:
   height: 100px;
 }
 
-    /* 
+/* 
     Example - No float
     In the following example the image will be displayed just where it occurs in the text (float: none;):
     Example */
@@ -40,25 +39,84 @@ Float Property:
   height: 100px;
 }
 
-
 /* 
 Float Next To Each Other
     Normally div elements will be displayed on top of each other. However, if we use float: left we can let elements float next to each other:
 
     Example */
-div {
+/* div {
   float: left;
   padding: 15px;
-}
+} */
 
-.div1 {
+.div5 {
   background: red;
 }
 
-.div2 {
+.div6 {
   background: yellow;
 }
 
-.div3 {
+.div7 {
   background: green;
+}
+
+/* 
+A. clear Property: 
+    When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.
+
+    The clear property specifies what should happen with the element that is next to a floating element.
+
+    The clear property can have one of the following values:
+        none - The element is not pushed below left or right floated elements. This is default
+        left - The element is pushed below left floated elements
+        right - The element is pushed below right floated elements
+        both - The element is pushed below both left and right floated elements
+        inherit - The element inherits the clear value from its parent
+    When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page. */
+
+.div1 {
+  float: left;
+  padding: 10px;
+  border: 3px solid #73ad21;
+}
+
+.div2 {
+  padding: 10px;
+  border: 3px solid red;
+}
+
+.div3 {
+  float: left;
+  padding: 10px;
+  border: 3px solid #73ad21;
+}
+
+.div4 {
+  padding: 10px;
+  border: 3px solid red;
+  clear: left;
+}
+
+
+/* 
+B. clearfix Hack
+    If a floated element is taller than the containing element, it will "overflow" outside of its container. 
+    We can then add a clearfix hack to solve this problem: */
+
+div {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+#img1 {
+  float: right;
+}
+
+#img2 {
+  float: right;
+}
+
+.clearfix {
+  overflow: auto;
 }

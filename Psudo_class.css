@@ -24,29 +24,28 @@ selector:pseudo-class {
 
     Example */
 
-#first{
-margin-left: 50px;
-}    
+#first {
+  margin-left: 50px;
+}
 /* unvisited link */
 #first:link {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 /* visited link */
 #first:visited {
-  color: #00FF00;
+  color: #00ff00;
 }
 
 /* mouse over link */
 #first:hover {
-  color: #FF00FF;
+  color: #ff00ff;
 }
 
 /* selected link */
 #first:active {
-  color: #0000FF;
+  color: #0000ff;
 }
-
 
 /* 
 2. Pseudo-classes and HTML Classes
@@ -59,7 +58,6 @@ a.highlight:hover {
   color: #ff0000;
 }
 
-
 /* 
 3. Hover on <div>
 An example of using the :hover pseudo-class on a <div> element:
@@ -70,14 +68,13 @@ Example */
   display: inline;
 }
 
-
 /* 
 4. Simple Tooltip Hover
 Hover over a <div> element to show a <p> element (like a tooltip):
 
 Hover over me to show the <p> element.
 Example */
-.New p{
+.New p {
   display: none;
   background-color: yellow;
   padding: 20px;
@@ -96,32 +93,24 @@ Example */
         In the following example, the selector matches any <p> element that is the first child of any element:
 
         Example */
-        p:first-child {
-        color: blue;
-        }
+.New1 p:first-child {
+  color: blue;
+}
 
 /* 
     B. Match the first <i> element in all <p> elements
         In the following example, the selector matches the first <i> element in all <p> elements:
 
         Example */
-        p i:first-child {
-        color: blue;
-        }
+#Box2 p i:first-child {
+  color: blue;
+}
 
 /* 
     C. Match all <i> elements in all first child <p> elements
         In the following example, the selector matches all <i> elements in <p> elements that are the first child of another element:
 
         Example */
-        p:first-child i {
-        color: blue;
-        }
-
-/* 
-6. CSS - The :lang Pseudo-class
-        The :lang pseudo-class allows you to define special rules for different languages.
-
-        In the example below, :lang defines the quotation marks for <q> elements with lang="no":
-
-        Example */
+.New2 p:first-child i {
+  color: blue;
+}
